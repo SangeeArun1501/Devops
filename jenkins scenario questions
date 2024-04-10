@@ -117,15 +117,16 @@ A: Log into the Jenkins master and navigate to Manage Jenkins > Manage Nodes > N
 
 Q: How to add a new plugin in Jenkins ?
 
-A: Using the CLI, 
+A: Using the CLI, efficient way to install plugin - use shell script and use this cmd to install. in case of more plugins shell is better option
    `java -jar jenkins-cli.jar install-plugin <PLUGIN_NAME>`
   
   Using the UI,
 
    1. Click on the "Manage Jenkins" link in the left-side menu.
    2. Click on the "Manage Plugins" link.
+if plugin not there then we need to upload.
 
-Q: What is JNLP and why is it used in Jenkins ?
+Q: What is JNLP and why is it used in Jenkins ? mechanism of how master nodes talk to slaves
 
 A: In Jenkins, JNLP is used to allow agents (also known as "slave nodes") to be launched and managed remotely by the Jenkins master instance. This allows Jenkins to distribute build tasks to multiple agents, providing scalability and improving performance.
 
@@ -134,4 +135,9 @@ A: In Jenkins, JNLP is used to allow agents (also known as "slave nodes") to be 
 Q: What are some of the common plugins that you use in Jenkins ?
 
 A: Be prepared for answer, you need to have atleast 3-4 on top of your head, so that interview feels you use jenkins on a day-to-day basis.
+git 
+docker 
+k8s
+
+
 
